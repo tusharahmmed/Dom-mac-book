@@ -53,6 +53,10 @@ function checkPromoCode(code) {
 
         // set total
         total.innerText = newTotal;
+
+        // disble input stauts
+        let status = document.createAttribute('disabled');
+        promoInput.setAttributeNode(status);
     }
 }
 
