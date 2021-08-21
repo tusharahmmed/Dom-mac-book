@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro - apple.com</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <!-- tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container sm:w-full md:w-4/5 mx-auto mt-8">
+            <div class="wrapper sm:flex border-b-2 border-gray-800 ml-8">
+                <div class="half-width sm:w-full w-5/12 lg:my-auto">
+                    <!-- product thumbnail -->
+                    <div class="product-thumbnail mx-auto sm:w-full md:w-10/12">
+                        <img src="images/mac.png" alt="">
+                    </div>
+                </div>
+                <div class="half-width sm:w-full w-7/12">
+                    <!-- product description -->
+                    <div class="product-title mb-4">
+                        <h1 class="text-4xl font-semibold text-gray-700">Customize your Blue 24-inch iMac with Apple M1
+                            chip.</h1>
+                        <p class="text-base font-sm mt-2">Apple M1 chip with 8-core CPU with 4 performance cores and 4
+                            efficiency cores, 7-core GPU,
+                            and 16-core Neural Engine 8GB unified n BGB unified memory 256 SSD storage Two Thunderbolt /
+                            USB 4 ports Magic Mouse Magic Keyboard US English</p>
+                    </div>
+                    <!-- product feature -->
+                    <div class="feature-list">
+                        <div class="feature py-2">
+                            <h3 class="font-bold text-lg mb-1">Memory</h3>
+                            <div id="memory-btns" class="btn-list memory">
+                                <button cost="0"
+                                    class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mb-1">8GB
+                                    unified memory</button>
+                                <button cost="180"
+                                    class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">16GB
+                                    unified memory</button>
+                            </div>
+                        </div>
+                        <div class="feature py-2">
+                            <h3 class="font-bold text-lg mb-1">Storage</h3>
+                            <div id="storage-btns" class="btn-list">
+                                <button cost='0'
+                                    class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mb-1">256GB
+                                    SSD storage</button>
+                                <button cost="100"
+                                    class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mb-1">512GB
+                                    SSD storage</button>
+                                <button cost="180"
+                                    class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">1TB
+                                    SSD storage</button>
+                            </div>
+                        </div>
+                        <div class="feature py-2">
+                            <h3 class="font-bold text-lg mb-1">Choose your delivery option</h3>
+                            <div id="shiping-parents" class="btn-list">
+                                <button cost="0"
+                                    class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mb-1">Friday,
+                                    Aug 25 FREE Prime Delivery</button>
+                                <button cost="20"
+                                    class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Friday,
+                                    Aug 21 Delivery charge $20</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product value -->
+                    <div class="value-table">
+                        <table class="md:w-4/5 lg:w-3/5 mt-6">
+                            <tr>
+                                <td>Best Price</td>
+                                <td id="best-price" class="text-right">1299</td>
+                            </tr>
+                            <tr>
+                                <td>Extra Memory Cost</td>
+                                <td id="memory-cost" class="text-right">0</td>
+                            </tr>
+                            <tr>
+                                <td>Extra Storage Cost</td>
+                                <td id="storage-cost" class="text-right">0</td>
+                            </tr>
+                            <tr class="border-b-2 border-gray-600">
+                                <td>Delivery charge</td>
+                                <td id="delivery-cost" class="text-right">0</td>
+                            </tr>
+                            <tr>
+                                <td>Total Price</td>
+                                <td id="sub-total" class="text-right">1299</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- promo code section -->
+                    <div class="promo-code py-2">
+                        <h4 class="text-lg font-semibold">Add Promo Code</h4>
+                        <form action="">
+                            <div class="input-container mb-1">
+
+                                <input class="border border-gray-800 rounded shadow mb-1" type="text" name=""
+                                    id="promo-code">
+                                <button id="submit-promo"
+                                    class="bg-red-500 hover:bg-red-700 text-white font-semibold py-2 px-4 border border-gray-400 rounded shadow">Apply</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="total-value text-4xl font-semibold text-center mt-4 mb-16">
+                <h1>Total: $<span id="total">1299</span></h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- javaScript -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

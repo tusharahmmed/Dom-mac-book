@@ -1,0 +1,46 @@
+/**
+ * Project Name : Shoping Calculation with DOM
+ * Author: Tushar Ahmmed
+ */
+
+
+/*
+    Global
+*/
+body{
+    background-color: #e8efdf;
+}
+
+
+/*
+    Table section
+*/
+tr{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.548);
+}
+tr td{
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+tr td:nth-child(2)::before{
+    content: '$';
+}
+
+
+/*
+    promo form
+*/
+.input-container input{
+    border: 1px solid rgba(236, 236, 240, 0.76);
+    border-radius: 4px;
+    padding: 7px;
+}
+.input-container input:focus{
+    border: 1px solid #b6215f;
+    border-radius: 2pt;
+    box-shadow: 0 0 0 1px #b6216c4d;
+    outline: none;
+    transition: .1s;
+}
